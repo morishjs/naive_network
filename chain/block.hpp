@@ -2,27 +2,15 @@
 #define NAIVE_NETWORK_BLOCK_HPP
 
 #include <string>
+#include "types.hpp"
 
 namespace naive {
-    class block {
+    struct block_header {
         // TODO: block index type?
-    public:
-        block() = delete;
-        block(uint32_t pindex, const std::string &pprevious_hash, uint32_t ptimestamp, const std::string &pdata,
-              const std::string &phash) :
-                index(pindex),
-                previous(pprevious_hash),
-                timestamp(ptimestamp),
-                data(pdata),
-                hash(phash) {}
-
-    private:
-        uint32_t index;
-        std::string previous;
         uint32_t timestamp;
-        std::string data;
-        std::string hash;
+
+        block_id previous;
+        block_id id;
     };
 }
-
 #endif //NAIVE_NETWORK_BLOCK_HPP
