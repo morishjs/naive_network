@@ -6,6 +6,7 @@
 
 namespace naive {
     using block_id = crypto::sha256;
+    using transaction_id = crypto::sha256;
     using std::string;
 }
 
