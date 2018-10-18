@@ -84,3 +84,4 @@ cmake-build-debug/naive_network
 cmake-build-debug/naive_network\.cbp
 
 \.idea/vcs\.xml
+./cmake-build-debug
