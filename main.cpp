@@ -1,7 +1,6 @@
 #include <iostream>
-
-using namespace naive;
+#include "src/chain.hpp"
 
 int main() {
-    chain block_chain;
+    naive::chain block_chain;
 }
