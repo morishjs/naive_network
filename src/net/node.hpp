@@ -5,12 +5,11 @@
 #ifndef NAIVE_NETWORK_NODE_HPP
 #define NAIVE_NETWORK_NODE_HPP
 
-#include "Poco/Net/IPAddress.h"
-
-class node {
-private:
-    Poco::Net::IPAddress ia;
-public:
-    void refresh_peer_list(node other);
-};
+namespace naive {
+    class node {
+    public:
+        void refresh_peer_list(node other);
+        void init_connect();
+    };
+}
 #endif //NAIVE_NETWORK_NODE_HPP

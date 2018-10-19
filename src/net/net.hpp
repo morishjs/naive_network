@@ -12,9 +12,7 @@ namespace naive {
         node_vector node_list;
 
         node_vector get_peerlist();
-
-        bool is_alive();
-
+        bool is_alive(const node& other);
     public:
         void initialize();
 
