@@ -2,8 +2,10 @@
 #define NAIVE_NETWORK_NET_HPP
 
 #include <vector>
+#include "node.hpp"
 
 namespace naive {
+    using naive::node;
     class node;
 
     class net {
